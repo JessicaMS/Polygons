@@ -1,0 +1,284 @@
+==9074== Memcheck, a memory error detector.
+==9074== Copyright (C) 2002-2007, and GNU GPL'd, by Julian Seward et al.
+==9074== Using LibVEX rev 1854, a library for dynamic binary translation.
+==9074== Copyright (C) 2004-2007, and GNU GPL'd, by OpenWorks LLP.
+==9074== Using valgrind-3.3.1-Debian, a dynamic binary instrumentation framework.
+==9074== Copyright (C) 2000-2007, and GNU GPL'd, by Julian Seward et al.
+==9074== 
+--9074-- Command line
+--9074--    ./CollisionLin.out
+--9074-- Startup, with flags:
+--9074--    -v
+--9074-- Contents of /proc/version:
+--9074--   Linux version 2.6.27-11-generic (buildd@crested) (gcc version 4.3.2 (Ubuntu 4.3.2-1ubuntu11) ) #1 SMP Thu Jan 29 19:28:32 UTC 2009
+--9074-- Arch and hwcaps: AMD64, amd64-sse2
+--9074-- Page sizes: currently 4096, max supported 4096
+--9074-- Valgrind library directory: /usr/lib/valgrind
+--9074-- Reading syms from /home/jessica/Programs/Awesome!/Collision/Execute/CollisionLin.out (0x400000)
+--9074-- Reading syms from /lib/ld-2.8.90.so (0x4000000)
+--9074-- Reading debug info from /lib/ld-2.8.90.so...
+--9074-- ... CRC mismatch (computed 8b4dd8c4 wanted afbabb05)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/valgrind/amd64-linux/memcheck (0x38000000)
+--9074--    object doesn't have a dynamic symbol table
+--9074-- Reading suppressions file: /usr/lib/valgrind/default.supp
+--9074-- Reading syms from /usr/lib/valgrind/amd64-linux/vgpreload_core.so (0x4A20000)
+--9074-- Reading syms from /usr/lib/valgrind/amd64-linux/vgpreload_memcheck.so (0x4C22000)
+--9074-- Reading syms from /usr/lib/libSDL-1.2.so.0.11.1 (0x4E2B000)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libSDL_ttf-2.0.so.0.6.3 (0x50C2000)
+--9074-- Reading debug info from /usr/lib/libSDL_ttf-2.0.so.0.6.3...
+--9074-- ... CRC mismatch (computed 20e1e68b wanted 7ba3ae61)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libstdc++.so.6.0.10 (0x52C7000)
+--9074-- Reading debug info from /usr/lib/libstdc++.so.6.0.10...
+--9074-- ... CRC mismatch (computed cc88aa39 wanted 2850c30a)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /lib/libm-2.8.90.so (0x55D4000)
+--9074-- Reading debug info from /lib/libm-2.8.90.so...
+--9074-- ... CRC mismatch (computed f6eee6bd wanted 1f4ccfe3)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /lib/libgcc_s.so.1 (0x5859000)
+--9074-- Reading debug info from /lib/libgcc_s.so.1...
+--9074-- ... CRC mismatch (computed 12b7f67d wanted 91b05ebe)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /lib/libc-2.8.90.so (0x5A71000)
+--9074-- Reading debug info from /lib/libc-2.8.90.so...
+--9074-- ... CRC mismatch (computed 77f11ebc wanted fff37537)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libasound.so.2.0.0 (0x5DE3000)
+--9074-- Reading debug info from /usr/lib/libasound.so.2.0.0...
+--9074-- ... CRC mismatch (computed 35055de9 wanted e7d54909)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /lib/libdl-2.8.90.so (0x60C3000)
+--9074-- Reading debug info from /lib/libdl-2.8.90.so...
+--9074-- ... CRC mismatch (computed 3183d6c2 wanted a7b88551)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libdirectfb-1.0.so.0.1.0 (0x62C7000)
+--9074-- Reading debug info from /usr/lib/libdirectfb-1.0.so.0.1.0...
+--9074-- ... CRC mismatch (computed adfd226b wanted 09b28106)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libfusion-1.0.so.0.1.0 (0x653B000)
+--9074-- Reading debug info from /usr/lib/libfusion-1.0.so.0.1.0...
+--9074-- ... CRC mismatch (computed 27e4b9d1 wanted 7a6ee659)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libdirect-1.0.so.0.1.0 (0x6744000)
+--9074-- Reading debug info from /usr/lib/libdirect-1.0.so.0.1.0...
+--9074-- ... CRC mismatch (computed 833f9a74 wanted dfc51b3c)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /lib/libpthread-2.8.90.so (0x695A000)
+--9074-- Reading debug info from /lib/libpthread-2.8.90.so...
+--9074-- ... CRC mismatch (computed 17ab9a0c wanted f10ed273)
+--9074-- Reading syms from /usr/lib/libfreetype.so.6.3.18 (0x6B76000)
+--9074-- Reading debug info from /usr/lib/libfreetype.so.6.3.18...
+--9074-- ... CRC mismatch (computed 9acc4dc3 wanted 5ff95166)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libz.so.1.2.3.3 (0x6DFA000)
+--9074-- Reading debug info from /usr/lib/libz.so.1.2.3.3...
+--9074-- ... CRC mismatch (computed e5fb38be wanted d46b55f2)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /lib/librt-2.8.90.so (0x7012000)
+--9074-- Reading debug info from /lib/librt-2.8.90.so...
+--9074-- ... CRC mismatch (computed c729cd3b wanted ad7ff06f)
+--9074--    object doesn't have a symbol table
+--9074-- REDIR: 0x5af3c70 (rindex) redirected to 0x4c26900 (rindex)
+--9074-- REDIR: 0x5af37a0 (strlen) redirected to 0x4c26d20 (strlen)
+--9074-- REDIR: 0x538e880 (operator new(unsigned long)) redirected to 0x4c25ea0 (operator new(unsigned long))
+--9074-- REDIR: 0x538d020 (operator delete(void*)) redirected to 0x4c24ce0 (operator delete(void*))
+--9074-- REDIR: 0xffffffffff600000 (???) redirected to 0x3802d0d3 (vgPlain_amd64_linux_REDIR_FOR_vgettimeofday)
+--9074-- REDIR: 0x5af60f0 (memcpy) redirected to 0x4c27170 (memcpy)
+--9074-- REDIR: 0x5aef220 (calloc) redirected to 0x4c242b0 (calloc)
+--9074-- REDIR: 0x5aef5c0 (malloc) redirected to 0x4c264e0 (malloc)
+--9074-- Reading syms from /usr/lib/libX11.so.6.2.0 (0x761B000)
+--9074-- Reading debug info from /usr/lib/libX11.so.6.2.0...
+--9074-- ... CRC mismatch (computed a310d897 wanted 16f05493)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libxcb-xlib.so.0.0.0 (0x7923000)
+--9074-- Reading debug info from /usr/lib/libxcb-xlib.so.0.0.0...
+--9074-- ... CRC mismatch (computed 05d34cf7 wanted 9d8d5467)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libxcb.so.1.0.0 (0x7B25000)
+--9074-- Reading debug info from /usr/lib/libxcb.so.1.0.0...
+--9074-- ... CRC mismatch (computed 00eee712 wanted 45f8ce7d)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libXau.so.6.0.0 (0x7D41000)
+--9074-- Reading debug info from /usr/lib/libXau.so.6.0.0...
+--9074-- ... CRC mismatch (computed 870269a4 wanted 945154e7)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libXdmcp.so.6.0.0 (0x7F43000)
+--9074-- Reading debug info from /usr/lib/libXdmcp.so.6.0.0...
+--9074-- ... CRC mismatch (computed fb55f3e2 wanted 525d4f87)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libXext.so.6.4.0 (0x8148000)
+--9074-- Reading debug info from /usr/lib/libXext.so.6.4.0...
+--9074-- ... CRC mismatch (computed ebad67c8 wanted 315bb62a)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libXrender.so.1.3.0 (0x835A000)
+--9074-- Reading debug info from /usr/lib/libXrender.so.1.3.0...
+--9074-- ... CRC mismatch (computed 3654c05a wanted c0d673c4)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libXrandr.so.2.1.0 (0x8564000)
+--9074-- Reading debug info from /usr/lib/libXrandr.so.2.1.0...
+--9074-- ... CRC mismatch (computed 481640a1 wanted 57526cd2)
+--9074--    object doesn't have a symbol table
+--9074-- REDIR: 0x5aed030 (free) redirected to 0x4c251e0 (free)
+--9074-- REDIR: 0x5af3a40 (strncmp) redirected to 0x4c26f80 (strncmp)
+--9074-- REDIR: 0x5af5dc0 (stpcpy) redirected to 0x4c27930 (stpcpy)
+--9074-- REDIR: 0x5af57b0 (mempcpy) redirected to 0x4c27cd0 (mempcpy)
+--9074-- REDIR: 0x5af70f0 (strchrnul) redirected to 0x4c27c70 (strchrnul)
+--9074-- REDIR: 0x5aefab0 (realloc) redirected to 0x4c26600 (realloc)
+--9074-- REDIR: 0x5b6d560 (__strcpy_chk) redirected to 0x4c28330 (__strcpy_chk)
+--9074-- REDIR: 0x5af4cb0 (memset) redirected to 0x4c27ba0 (memset)
+--9074-- REDIR: 0x5af4af0 (memmove) redirected to 0x4c27c10 (memmove)
+--9074-- REDIR: 0x5af3b10 (strncpy) redirected to 0x4c26e50 (strncpy)
+--9074-- REDIR: 0x5af3250 (strcpy) redirected to 0x4c26d80 (strcpy)
+--9074-- Discarding syms at 0x8564000-0x876C000 in /usr/lib/libXrandr.so.2.1.0 due to munmap()
+--9074-- Discarding syms at 0x8148000-0x835A000 in /usr/lib/libXext.so.6.4.0 due to munmap()
+--9074-- Discarding syms at 0x835A000-0x8564000 in /usr/lib/libXrender.so.1.3.0 due to munmap()
+--9074-- Discarding syms at 0x761B000-0x7923000 in /usr/lib/libX11.so.6.2.0 due to munmap()
+--9074-- Discarding syms at 0x7923000-0x7B25000 in /usr/lib/libxcb-xlib.so.0.0.0 due to munmap()
+--9074-- Discarding syms at 0x7B25000-0x7D41000 in /usr/lib/libxcb.so.1.0.0 due to munmap()
+--9074-- Discarding syms at 0x7D41000-0x7F43000 in /usr/lib/libXau.so.6.0.0 due to munmap()
+--9074-- Discarding syms at 0x7F43000-0x8148000 in /usr/lib/libXdmcp.so.6.0.0 due to munmap()
+--9074-- Reading syms from /usr/lib/libX11.so.6.2.0 (0x761B000)
+--9074-- Reading debug info from /usr/lib/libX11.so.6.2.0...
+--9074-- ... CRC mismatch (computed a310d897 wanted 16f05493)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libxcb-xlib.so.0.0.0 (0x7923000)
+--9074-- Reading debug info from /usr/lib/libxcb-xlib.so.0.0.0...
+--9074-- ... CRC mismatch (computed 05d34cf7 wanted 9d8d5467)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libxcb.so.1.0.0 (0x7B25000)
+--9074-- Reading debug info from /usr/lib/libxcb.so.1.0.0...
+--9074-- ... CRC mismatch (computed 00eee712 wanted 45f8ce7d)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libXau.so.6.0.0 (0x7D41000)
+--9074-- Reading debug info from /usr/lib/libXau.so.6.0.0...
+--9074-- ... CRC mismatch (computed 870269a4 wanted 945154e7)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libXdmcp.so.6.0.0 (0x7F43000)
+--9074-- Reading debug info from /usr/lib/libXdmcp.so.6.0.0...
+--9074-- ... CRC mismatch (computed fb55f3e2 wanted 525d4f87)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libXext.so.6.4.0 (0x8148000)
+--9074-- Reading debug info from /usr/lib/libXext.so.6.4.0...
+--9074-- ... CRC mismatch (computed ebad67c8 wanted 315bb62a)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libXrender.so.1.3.0 (0x835A000)
+--9074-- Reading debug info from /usr/lib/libXrender.so.1.3.0...
+--9074-- ... CRC mismatch (computed 3654c05a wanted c0d673c4)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libXrandr.so.2.1.0 (0x8564000)
+--9074-- Reading debug info from /usr/lib/libXrandr.so.2.1.0...
+--9074-- ... CRC mismatch (computed 481640a1 wanted 57526cd2)
+--9074--    object doesn't have a symbol table
+--9074-- REDIR: 0x5af3060 (index) redirected to 0x4c26a20 (index)
+--9074-- REDIR: 0x5af4450 (memchr) redirected to 0x4c27120 (memchr)
+--9074-- REDIR: 0x5af3210 (strcmp) redirected to 0x4c27000 (strcmp)
+--9074-- REDIR: 0x5af3890 (strnlen) redirected to 0x4c26cd0 (strnlen)
+--9074-- REDIR: 0x5af6fd0 (rawmemchr) redirected to 0x4c27cb0 (rawmemchr)
+--9074-- Reading syms from /usr/lib/libXcursor.so.1.0.2 (0x876C000)
+--9074-- Reading debug info from /usr/lib/libXcursor.so.1.0.2...
+--9074-- ... CRC mismatch (computed 15cdd867 wanted a60dd5d5)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libXfixes.so.3.1.0 (0x8976000)
+--9074-- Reading debug info from /usr/lib/libXfixes.so.3.1.0...
+--9074-- ... CRC mismatch (computed 87062290 wanted c65e5c9f)
+--9074--    object doesn't have a symbol table
+--9074-- REDIR: 0x5af2ea0 (strcat) redirected to 0x4c26ae0 (strcat)
+--9074-- Reading syms from /usr/lib/alsa-lib/libasound_module_conf_pulse.so (0x8CA7000)
+--9074-- Reading debug info from /usr/lib/alsa-lib/libasound_module_conf_pulse.so...
+--9074-- ... CRC mismatch (computed d1257f65 wanted c93f6c63)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libpulse.so.0.4.1 (0x8EA9000)
+--9074-- Reading debug info from /usr/lib/libpulse.so.0.4.1...
+--9074-- ... CRC mismatch (computed 26554d49 wanted d3bbce19)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libSM.so.6.0.0 (0x90F9000)
+--9074-- Reading debug info from /usr/lib/libSM.so.6.0.0...
+--9074-- ... CRC mismatch (computed fd02feb3 wanted 26f9afc4)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libICE.so.6.3.0 (0x9302000)
+--9074-- Reading debug info from /usr/lib/libICE.so.6.3.0...
+--9074-- ... CRC mismatch (computed d9288efe wanted a63cf42f)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /lib/libcap.so.1.10 (0x951D000)
+--9074-- Reading debug info from /lib/libcap.so.1.10...
+--9074-- ... CRC mismatch (computed 7c55dc36 wanted 8dab0707)
+--9074--    object doesn't have a symbol table
+--9074-- Discarding syms at 0x8CA7000-0x8EA9000 in /usr/lib/alsa-lib/libasound_module_conf_pulse.so due to munmap()
+--9074-- Discarding syms at 0x8EA9000-0x90F9000 in /usr/lib/libpulse.so.0.4.1 due to munmap()
+--9074-- Discarding syms at 0x90F9000-0x9302000 in /usr/lib/libSM.so.6.0.0 due to munmap()
+--9074-- Discarding syms at 0x9302000-0x951D000 in /usr/lib/libICE.so.6.3.0 due to munmap()
+--9074-- Discarding syms at 0x951D000-0x9721000 in /lib/libcap.so.1.10 due to munmap()
+--9074-- Reading syms from /usr/lib/alsa-lib/libasound_module_pcm_pulse.so (0x8CA7000)
+--9074-- Reading debug info from /usr/lib/alsa-lib/libasound_module_pcm_pulse.so...
+--9074-- ... CRC mismatch (computed 40e10244 wanted 423a5b6e)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libpulse.so.0.4.1 (0x8EAE000)
+--9074-- Reading debug info from /usr/lib/libpulse.so.0.4.1...
+--9074-- ... CRC mismatch (computed 26554d49 wanted d3bbce19)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libSM.so.6.0.0 (0x90FE000)
+--9074-- Reading debug info from /usr/lib/libSM.so.6.0.0...
+--9074-- ... CRC mismatch (computed fd02feb3 wanted 26f9afc4)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /usr/lib/libICE.so.6.3.0 (0x9307000)
+--9074-- Reading debug info from /usr/lib/libICE.so.6.3.0...
+--9074-- ... CRC mismatch (computed d9288efe wanted a63cf42f)
+--9074--    object doesn't have a symbol table
+--9074-- Reading syms from /lib/libcap.so.1.10 (0x9522000)
+--9074-- Reading debug info from /lib/libcap.so.1.10...
+--9074-- ... CRC mismatch (computed 7c55dc36 wanted 8dab0707)
+--9074--    object doesn't have a symbol table
+--9074-- Discarding syms at 0x8564000-0x876C000 in /usr/lib/libXrandr.so.2.1.0 due to munmap()
+--9074-- Discarding syms at 0x8148000-0x835A000 in /usr/lib/libXext.so.6.4.0 due to munmap()
+Normal Quit: 
+==9074== 
+==9074== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2248 from 4)
+--9074-- 
+--9074-- supp:   1698 X on SUSE11 writev uninit padding
+--9074-- supp:    164 dl-hack4-64bit-addr-1
+--9074-- supp:    222 dl-hack3-cond-1
+--9074-- supp:    164 dl-hack3-cond-2
+==9074== malloc/free: in use at exit: 176,624 bytes in 2,340 blocks.
+==9074== malloc/free: 37,223 allocs, 34,883 frees, 21,691,838 bytes allocated.
+==9074== 
+==9074== searching for pointers to 2,340 not-freed blocks.
+==9074== checked 694,304 bytes.
+==9074== 
+==9074== LEAK SUMMARY:
+==9074==    definitely lost: 226 bytes in 7 blocks.
+==9074==      possibly lost: 21,568 bytes in 300 blocks.
+==9074==    still reachable: 154,830 bytes in 2,033 blocks.
+==9074==         suppressed: 0 bytes in 0 blocks.
+==9074== Rerun with --leak-check=full to see details of leaked memory.
+--9074--  memcheck: sanity checks: 2637 cheap, 54 expensive
+--9074--  memcheck: auxmaps: 0 auxmap entries (0k, 0M) in use
+--9074--  memcheck: auxmaps_L1: 0 searches, 0 cmps, ratio 0:10
+--9074--  memcheck: auxmaps_L2: 0 searches, 0 nodes
+--9074--  memcheck: SMs: n_issued      = 246 (3936k, 3M)
+--9074--  memcheck: SMs: n_deissued    = 12 (192k, 0M)
+--9074--  memcheck: SMs: max_noaccess  = 524287 (8388592k, 8191M)
+--9074--  memcheck: SMs: max_undefined = 9 (144k, 0M)
+--9074--  memcheck: SMs: max_defined   = 1302 (20832k, 20M)
+--9074--  memcheck: SMs: max_non_DSM   = 238 (3808k, 3M)
+--9074--  memcheck: max sec V bit nodes:    622 (53k, 0M)
+--9074--  memcheck: set_sec_vbits8 calls: 1384 (new: 622, updates: 762)
+--9074--  memcheck: max shadow mem size:   8005k, 7M
+--9074-- translate:            fast SP updates identified: 17,859 ( 85.7%)
+--9074-- translate:   generic_known SP updates identified: 2,568 ( 12.3%)
+--9074-- translate: generic_unknown SP updates identified: 410 (  1.9%)
+--9074--     tt/tc: 148,151 tt lookups requiring 189,365 probes
+--9074--     tt/tc: 148,151 fast-cache updates, 17 flushes
+--9074--  transtab: new        19,779 (480,825 -> 7,290,188; ratio 151:10) [0 scs]
+--9074--  transtab: dumped     0 (0 -> ??)
+--9074--  transtab: discarded  2,407 (50,490 -> ??)
+--9074-- scheduler: 150,173,232 jumps (bb entries).
+--9074-- scheduler: 2,637/228,765 major/minor sched events.
+--9074--    sanity: 2638 cheap, 54 expensive checks.
+--9074--    exectx: 3,079 lists, 3,039 contexts (avg 0 per list)
+--9074--    exectx: 74,286 searches, 73,472 full compares (989 per 1000)
+--9074--    exectx: 0 cmp2, 3,969 cmp4, 0 cmpAll
+--9074--  errormgr: 33 supplist searches, 354 comparisons during search
+--9074--  errormgr: 2,248 errlist searches, 5,117 comparisons during search
