@@ -14,7 +14,7 @@ all: Linux
 
 Linux: 
 
-	$(COMPILE) main.cpp SDLwindow.cpp timer.cpp -o Execute/collisionLin.out $(CFLAGS) $(LIBS)
+	$(COMPILE) main.cpp SDLwindow.cpp Polygon.cpp StarList.cpp StarData.cpp timer.cpp -o Execute/collisionLin.out $(CFLAGS) $(LIBS)
 
 
 Win:
