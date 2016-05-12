@@ -1,0 +1,8 @@
+All code is hereby released under the GPLv3 license by Jessica Seibert. 
+FreeSans.TTF font provided by the GNU Project:
+https://savannah.gnu.org/projects/freefont/
+
+     \    /\
+       )  ( ')
+      (  /  )
+ jgs   \(__)|

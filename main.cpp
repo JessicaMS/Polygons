@@ -76,80 +76,7 @@ struct fpoint
 	double y;
 };
 #endif
-static void line32(SDL_Surface *s, 
-                   int x1, int y1, 
-                   int x2, int y2, 
-                   Uint32 color)
-{
-  int d;
-  int x;
-  int y;
-  int ax;
-  int ay;
-  int sx;
-  int sy;
-  int dx;
-  int dy;
 
-  Uint8 *lineAddr;
-  Sint32 yOffset;
-
-  dx = x2 - x1;  
-  ax = abs(dx) << 1;  
-  sx = sign(dx);
-
-  dy = y2 - y1;  
-  ay = abs(dy) << 1;  
-  sy = sign(dy);
-  yOffset = sy * s->pitch;
-
-  x = x1;
-  y = y1;
-
-  lineAddr = ((Uint8 *)(s->pixels)) + (y * s->pitch);
-  if (ax>ay)
-  {                      /* x dominant */
-    d = ay - (ax >> 1);
-    for (;;)
-    {
-      *((Uint32 *)(lineAddr + (x << 2))) = (Uint32)color;
-
-      if (x == x2)
-      {
-        return;
-      }
-      if (d>=0)
-      {
-        y += sy;
-        lineAddr += yOffset;
-        d -= ax;
-      }
-      x += sx;
-      d += ay;
-    }
-  }
-  else
-  {                      /* y dominant */
-    d = ax - (ay >> 1);
-    for (;;)
-    {
-      *((Uint32 *)(lineAddr + (x << 2))) = (Uint32)color;
-
-      if (y == y2)
-      {
-        return;
-      }
-      if (d>=0) 
-      {
-        x += sx;
-        d -= ay;
-      }
-      y += sy;
-      lineAddr += yOffset;
-      d += ax;
-    }
-  }
-}
 
 void drawpixel(SDL_Surface *screen, int x, int y)
 {
@@ -231,7 +158,7 @@ bool GameInitialize()
 	
 	//Open our font
 	//font = TTF_OpenFont(".//Acidd.ttf", 20);
-	font = TTF_OpenFont( ".//LESSERCO.ttf", 42 );
+	font = TTF_OpenFont( ".//FreeSans.ttf", 42 );
 	if(!font) 
 	{
 	    	printf("TTF_OpenFont failed: %s\n", TTF_GetError());
